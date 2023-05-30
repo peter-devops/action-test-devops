@@ -14,3 +14,7 @@ jobs:
 
       - name: Run Child Job
         run: echo "Running child job in response to repository_dispatch event."
+      
+      - name: 觸發 Discord 通知。
+        run: |
+          curl -H "Content-Type: application/json" -d '{"username": "github", "content": "告警出來囉"}' https://discord.com/api/webhooks/1110813479033647185/3yjXh-VM5OabFqY4Pn6G1sqc5gT1yEaI5CABX0xMTcANdwdsPVXLfJGsPt9r2hCITVZ5
