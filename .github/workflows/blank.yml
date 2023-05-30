@@ -17,4 +17,4 @@ jobs:
       
       - name: 觸發 Discord 通知。
         run: |
-          curl -H "Content-Type: application/json" -d '{"username": "github", "content": "告警出來囉"}' https://discord.com/api/webhooks/1110813479033647185/3yjXh-VM5OabFqY4Pn6G1sqc5gT1yEaI5CABX0xMTcANdwdsPVXLfJGsPt9r2hCITVZ5
+          curl -H "Content-Type: application/json" -d '{"username": "我是重要的", "content": "請協助檢查 release 是否異常"}' https://discord.com/api/webhooks/1110813479033647185/3yjXh-VM5OabFqY4Pn6G1sqc5gT1yEaI5CABX0xMTcANdwdsPVXLfJGsPt9r2hCITVZ5
