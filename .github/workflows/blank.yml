@@ -1,0 +1,16 @@
+name: CI/CD
+
+on:
+  repository_dispatch:
+    types: [trigger-child-action]
+
+jobs:
+  your-child-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Child Job
+        run: echo "Running child job in response to repository_dispatch event."
