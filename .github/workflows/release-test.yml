@@ -2,8 +2,8 @@ name: test-release
 #
 on:
   release:
-    branches: 
-    - "main"
+#     branches: 
+#     - "main"
     types: 
     - "published"
 # 
