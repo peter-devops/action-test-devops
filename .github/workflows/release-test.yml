@@ -1,11 +1,9 @@
-name: prod 環境 build-test-deploy
+name: test-release
 #
 on:
   release:
-    branches: [ "main","main-dev" ]
+    branches: [ "main" ]
     types: ["published"]
-  push:
-    branches: [ "main-dev" ]
 # 
 jobs:
   HelloWorld:
