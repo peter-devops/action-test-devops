@@ -4,8 +4,8 @@ on:
   release:
     branches: 
     - "main"
-    # types: 
-    # - "published"
+    types: 
+    - "published"
 # 
 jobs:
   HelloWorld:
