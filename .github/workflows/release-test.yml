@@ -1,0 +1,41 @@
+name: prod 環境 build-test-deploy
+#
+on:
+  release:
+    branches: [ "master" ]
+    types: ["published"]
+  push:
+    branches: [ "master" ]
+# 
+jobs:
+  HelloWorld:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Hwllo world
+      run: echo "Hello World!"
+      
+
+
+
+
+# name: CI/CD
+
+# on:
+#   repository_dispatch:
+#     types: [trigger-child-action]
+
+# jobs:
+#   your-child-job:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v2
+
+#       - name: Run Child Job
+#         run: echo "Running child job in response to repository_dispatch event."
+      
+#       - name: 觸發 Discord 通知。
+#         run: |
+#           curl -H "Content-Type: application/json" -d '{"username": "我是重要的", "content": "請協助檢查 release 是否異常"}' https://discord.com/api/webhooks/1110813479033647185/3yjXh-VM5OabFqY4Pn6G1sqc5gT1yEaI5CABX0xMTcANdwdsPVXLfJGsPt9r2hCITVZ5
