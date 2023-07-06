@@ -2,8 +2,10 @@ name: test-release
 #
 on:
   release:
-    branches: [ "main" ]
-    types: ["published"]
+    branches: 
+    - "main"
+    types: 
+    - "published"
 # 
 jobs:
   HelloWorld:
